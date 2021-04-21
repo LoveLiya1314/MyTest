@@ -17,16 +17,18 @@
 
 package TestCode;
 
-public class test1 extends test2{
+interface First {
+    int a = 10;
+
+    default void fun() {
+
+    }
+}
+
+public class test1 {
     public static void main(String[] args) {
-        int aa=First.a;
+        int aa = First.a;
         System.out.println(aa);
     }
 
-}
-interface First{
-    int a=10;
-    default void fun(){
-
-    }
 }

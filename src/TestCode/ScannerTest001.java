@@ -19,11 +19,11 @@ package TestCode;
 
 import java.util.Scanner;
 
-public class test9 {
+public class ScannerTest001 {
     public static void main(String[] args) {
         System.out.println("GoodBay,World!");
         Scanner in = new Scanner(System.in);
-        int i=0;
+        int i = 0;
         i = in.nextInt();
         System.out.println(i);
     }

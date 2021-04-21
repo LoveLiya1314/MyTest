@@ -15,7 +15,7 @@
  * Love Liya Forever!                                                         *
  ******************************************************************************/
 
-package TestCode;
+package AplicationCode;
 public class Feistel {
 
 
