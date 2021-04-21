@@ -1,6 +1,6 @@
 /******************************************************************************
  * VIDI VINI VIKI                                                             *
- * Copyright ©  12:46 2021 -1 -10  Lambert All rights reserved.               *
+ * Copyright ©  17:1 2021 -4 -21  Lambert All rights reserved.                *
  *    Licensed under the Apache License, Version 2.0 (the "License");         *
  *    you may not use this file except in compliance with the License.        *
  *    You may obtain a copy of the License at                                 *
@@ -19,9 +19,7 @@ package TestCode;
 
 interface First {
     int a = 10;
-
     default void fun() {
-
     }
 }
 
