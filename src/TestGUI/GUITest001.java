@@ -39,6 +39,7 @@ public class GUITest001 extends JFrame {
         ResourceBundle bundle = ResourceBundle.getBundle("TestGUI.First");
         dialogPane = new JPanel();
         contentPanel = new JPanel();
+        tree1 = new JTree();
         buttonBar = new JPanel();
         okButton = new JButton();
         cancelButton = new JButton();
@@ -59,11 +60,17 @@ public class GUITest001 extends JFrame {
                 contentPanel.setLayout(contentPanelLayout);
                 contentPanelLayout.setHorizontalGroup(
                     contentPanelLayout.createParallelGroup()
-                        .addGap(0, 374, Short.MAX_VALUE)
+                        .addGroup(contentPanelLayout.createSequentialGroup()
+                            .addContainerGap()
+                            .addComponent(tree1, GroupLayout.PREFERRED_SIZE, 177, GroupLayout.PREFERRED_SIZE)
+                            .addContainerGap(446, Short.MAX_VALUE))
                 );
                 contentPanelLayout.setVerticalGroup(
                     contentPanelLayout.createParallelGroup()
-                        .addGap(0, 202, Short.MAX_VALUE)
+                        .addGroup(contentPanelLayout.createSequentialGroup()
+                            .addContainerGap()
+                            .addComponent(tree1, GroupLayout.DEFAULT_SIZE, 390, Short.MAX_VALUE)
+                            .addContainerGap())
                 );
             }
             dialogPane.add(contentPanel, BorderLayout.CENTER);
@@ -98,6 +105,7 @@ public class GUITest001 extends JFrame {
     // JFormDesigner - Variables declaration - DO NOT MODIFY  //GEN-BEGIN:variables
     private JPanel dialogPane;
     private JPanel contentPanel;
+    private JTree tree1;
     private JPanel buttonBar;
     private JButton okButton;
     private JButton cancelButton;
